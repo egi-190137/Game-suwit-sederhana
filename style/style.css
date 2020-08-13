@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.home {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./../IMG/backgroumd.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all ease-out 1s;
+    top: 0;
+    z-index: 999;
+}
+
+.naik {
+    margin-top: -100vh;
+}
+
+.home h1 {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 10px;
+    background: -webkit-linear-gradient(30deg, #fdf000, #feca07);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 30px auto 100px;
+}
+
+button.play {
+    background-image: url(./../IMG/play.png);
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-size: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    display: block;
+    margin: auto;
+    transition: all 0.2s;
+}
+
+button.play:hover {
+    cursor: pointer;
+    width: 220px;
+    height: 220px;
+}
+
+.game {
+    background-color: #feca07;
+    height: 100vh;
+    padding-top: 10px;
+}
+
+.inGame {
+    width: 70%;
+    border-radius: 40px;
+    border: 10px solid rgb(255, 136, 0);
+    background-color: rgb(238, 255, 2);
+    margin: 0 auto 10px;
+    padding: 20px;
+    height: 249px;
+    box-shadow: 0 0 20px rgba(255, 97, 2, 0.49);
+}
+
+.inGame img {
+    margin: auto;
+    height: 160px;
+    display: block;
+}
+
+h4 {
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.img {
+    opacity: 60%;
+    transition: all ease 0.2s;
+}
+
+.player .img:hover,
+.img.muncul {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.player .img:hover img,
+.img.muncul img {
+    height: 180px;
+    margin-top: -10px;
+}
+
+.inGame h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    flex: 1;
+}
+
+.container-hasil {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.533);
+    display: none;
+    opacity: 0;
+    transition: all ease 0.2s;
+    z-index: 999;
+}
+
+.container-hasil.muncul {
+    display: block;
+    opacity: 100%;
+}
+
+.hasil {
+    border-radius: 20px;
+    border: 10px solid rgb(255, 136, 0);
+    background-color: rgb(238, 255, 2);
+    width: 30%;
+    box-sizing: content-box;
+    height: 100px;
+    margin: 40vh auto 0;
+}
+
+.hasil h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 5px 0 0 0;
+    text-transform: uppercase;
+}
+
+.hasil button {
+    padding: 5px 10px;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: #fbed67;
+    border: 2px solid #e0ba3a;
+    border-radius: 5px;
+    color: #363100;
+    margin: 10px auto;
+    display: block;
+    transition: all ease-in 0.1s;
+}
+
+.hasil button:hover {
+    padding: 10px 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
