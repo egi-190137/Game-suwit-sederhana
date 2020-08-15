@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Luckiest Guy', cursive;
+    overflow: none;
 }
 
 .home {
